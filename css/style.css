@@ -1,0 +1,206 @@
+.logo1 {
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    top: 8px;
+}
+
+.logo2 {
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    top: 8px;
+}
+
+/* header dropdown menu section */
+
+.header-menu {
+    background-color: #FCFCFC;
+    padding-bottom: -10px;
+}
+
+.header-menu ul {
+    text-align: center;
+}
+.header-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a {
+    color: #333;
+    padding:  10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+}
+.header-menu ul li:last-child a{
+    border-right: none;
+}
+.header-menu ul li:hover > a, .menu-active{
+    background: #344807;
+    color: #fff; 
+}
+.menu-icon{
+    display: flex;
+    justify-content: center;
+}
+
+/*  DropDOnw Mneu Start  */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+    transition: .4s;
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.dropdown-hover li a:hover{
+    background-color: #fff !important;
+    color: #333 !important;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.header-menu ul ul li:first-child a{
+    border-left: none;
+}
+
+/* Hover part */
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+/* podma discreption */
+.podma-discreption-part {
+    padding: 30px 0px;
+}
+
+.podma-title h1 {
+    font-size: 30px;
+}
+
+.podma-discreption p {
+    color: #777;
+}
+
+/* service section */
+.service {
+    padding: 40px 0px;
+}
+
+.card {
+    background-color: #F6F6F6 !important;
+}
+
+.card:hover {
+    background-color: #fff !important;
+}
+
+.icon-box {
+    background: url("../images/service-bkg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 100;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 15px;
+}
+
+.icon-box i {
+    font-size: 35px;
+    color: #fff;
+    margin-top: -15px;
+}
+
+.read-more-btn {
+    text-decoration: none;
+    padding: 3px 3px;
+    background-color: #e6e6e6;
+    color: #777;
+}
+
+.read-more-btn:hover {
+    background-color: #fff;
+    color: red;
+    font-weight: bold;
+}
+
+/* portfolio section */
+.portfolio {
+    padding: 40px 0px;
+}
+hr{
+    color: springgreen;
+}
+.footer{
+    background-color: #3A3A3A;
+    padding-top: 20px;
+    
+}
+/* footer section */
+.footer-left-menu{
+    color: #bbb;
+    font-size: 14px;
+}
+.footer-right-menu a{
+    color: #bbb;
+    text-decoration: none;
+}
+.footer-right-menu a:hover {
+    color: black;
+    font-weight: bold;
+}
+.copyright-footer{
+    background-color: #303030;
+    padding: 15px 0px;
+}
+.copyright-footer .text-right{
+    text-align: right;
+}
+.copyright-footer a{
+    color: #777;
+    text-decoration: none;
+}
+.copyright-footer a:hover{
+    color: black;
+    font-weight: bold;
+}
+/* portfolio carocell */
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    padding-top: 20px;
+}
